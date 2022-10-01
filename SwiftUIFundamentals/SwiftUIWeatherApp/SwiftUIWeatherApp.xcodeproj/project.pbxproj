@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F279DA9E28E01CD4006B80EC /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F279DA9D28E01CD4006B80EC /* WeatherButton.swift */; };
 		F2A90B6028C2B2CD0052D806 /* SwiftUIWeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A90B5F28C2B2CD0052D806 /* SwiftUIWeatherAppApp.swift */; };
 		F2A90B6228C2B2CD0052D806 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A90B6128C2B2CD0052D806 /* ContentView.swift */; };
 		F2A90B6428C2B2D10052D806 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A90B6328C2B2D10052D806 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F279DA9D28E01CD4006B80EC /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 		F2A90B5C28C2B2CD0052D806 /* SwiftUIWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A90B5F28C2B2CD0052D806 /* SwiftUIWeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWeatherAppApp.swift; sourceTree = "<group>"; };
 		F2A90B6128C2B2CD0052D806 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				F2A90B5F28C2B2CD0052D806 /* SwiftUIWeatherAppApp.swift */,
 				F2A90B6128C2B2CD0052D806 /* ContentView.swift */,
+				F279DA9D28E01CD4006B80EC /* WeatherButton.swift */,
 				F2A90B6328C2B2D10052D806 /* Assets.xcassets */,
 				F2A90B6528C2B2D10052D806 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F279DA9E28E01CD4006B80EC /* WeatherButton.swift in Sources */,
 				F2A90B6228C2B2CD0052D806 /* ContentView.swift in Sources */,
 				F2A90B6028C2B2CD0052D806 /* SwiftUIWeatherAppApp.swift in Sources */,
 			);
