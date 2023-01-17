@@ -14,18 +14,30 @@ struct OrderView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
-                List(viewModel.cartItems) { appetizer in
-                    AppetizerListCell(appetizer: appetizer)
+//                List(viewModel.cartItems) { appetizer in
+//                    AppetizerListCell(appetizer: appetizer)
+//                }
+                
+                List {
+                    ForEach(viewModel.cartItems) { appetizer in
+                        AppetizerListCell(appetizer: appetizer)
+                    }
+                    .onDelete(perform: deleteItem)
                 }
+                .listStyle(PlainListStyle())
                 
                 APButton(title: "$\(viewModel.orderTotal, specifier: "%.2f") - Place Order")
-                    .padding(.bottom, 40)
+                    .padding([.leading, .trailing, .bottom], 40)
             }
             .onAppear {
                 viewModel.computeOrderTotal()
             }
             .navigationTitle("🧾 Orders")
         }
+    }
+    
+    func deleteItem(at offset: IndexSet) {
+        viewModel.cartItems.remove(atOffsets: offset)
     }
 }
 

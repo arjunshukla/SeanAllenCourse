@@ -31,6 +31,7 @@
 		F258A02729734FE500D3E30C /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258A02629734FE500D3E30C /* String+Ext.swift */; };
 		F258A0292973563100D3E30C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258A0282973563100D3E30C /* User.swift */; };
 		F258A02B2973720100D3E30C /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258A02A2973720100D3E30C /* OrderViewModel.swift */; };
+		F258A02E2975FC3300D3E30C /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258A02D2975FC3300D3E30C /* EmptyState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		F258A02629734FE500D3E30C /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		F258A0282973563100D3E30C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F258A02A2973720100D3E30C /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		F258A02D2975FC3300D3E30C /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 		F258A0162967B82400D3E30C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F258A02C2975FC1300D3E30C /* Empty States */,
 				F258A01F296EA30000D3E30C /* Buttons */,
 				F258A0192967B85200D3E30C /* Cells */,
 				F258A0182967B84900D3E30C /* Image */,
@@ -245,6 +248,14 @@
 				F258A022296EA4A700D3E30C /* XDismissButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		F258A02C2975FC1300D3E30C /* Empty States */ = {
+			isa = PBXGroup;
+			children = (
+				F258A02D2975FC3300D3E30C /* EmptyState.swift */,
+			);
+			path = "Empty States";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +332,7 @@
 				F258A02B2973720100D3E30C /* OrderViewModel.swift in Sources */,
 				F2301DEF295EFB9F00C1A6DE /* APError.swift in Sources */,
 				F2301DE9295C6E1900C1A6DE /* Appetizer.swift in Sources */,
+				F258A02E2975FC3300D3E30C /* EmptyState.swift in Sources */,
 				F2301DF12960458100C1A6DE /* AppetizerListViewModel.swift in Sources */,
 				F2301DF72963A37700C1A6DE /* Color+Ext.swift in Sources */,
 				F2301DE7295AC61300C1A6DE /* AccountView.swift in Sources */,

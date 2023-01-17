@@ -8,7 +8,7 @@
 import SwiftUI
 
 final class OrderViewModel: ObservableObject {
-    @Published var cartItems: [Appetizer] = [MockData.sampleAppetizer]
+    @Published var cartItems: [Appetizer] = MockData.orderItems
     @Published var orderTotal: Double = 0.0
     
     func computeOrderTotal() {
