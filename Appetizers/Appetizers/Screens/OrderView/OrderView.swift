@@ -8,36 +8,34 @@
 import SwiftUI
 
 struct OrderView: View {
-    
-    @StateObject private var viewModel = OrderViewModel()
+    @EnvironmentObject var order: Order
     
     var body: some View {
         NavigationView {
-            VStack(spacing: 20) {
-//                List(viewModel.cartItems) { appetizer in
-//                    AppetizerListCell(appetizer: appetizer)
-//                }
-                
-                List {
-                    ForEach(viewModel.cartItems) { appetizer in
-                        AppetizerListCell(appetizer: appetizer)
+            ZStack {
+                VStack(spacing: 20) {
+                    List {
+                        ForEach(order.items) { appetizer in
+                            AppetizerListCell(appetizer: appetizer)
+                        }
+                        .onDelete(perform: order.deleteItem)
                     }
-                    .onDelete(perform: deleteItem)
+                    .listStyle(PlainListStyle())
+                    
+                    Button {
+                        print("Order placed!")
+                    } label: {
+                        APButton(title: "$\(order.totalPrice, specifier: "%.2f") - Place Order")
+                            .padding(.bottom, 20)
+                    }
                 }
-                .listStyle(PlainListStyle())
                 
-                APButton(title: "$\(viewModel.orderTotal, specifier: "%.2f") - Place Order")
-                    .padding([.leading, .trailing, .bottom], 40)
-            }
-            .onAppear {
-                viewModel.computeOrderTotal()
+                if order.items.isEmpty {
+                    EmptyState(imageName: "empty-order", message: "No orders in your cart yet.\nPlease add an item from the appetizer list.")
+                }
             }
             .navigationTitle("🧾 Orders")
         }
-    }
-    
-    func deleteItem(at offset: IndexSet) {
-        viewModel.cartItems.remove(atOffsets: offset)
     }
 }
 

@@ -30,8 +30,8 @@
 		F258A02529734DDE00D3E30C /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258A02429734DDE00D3E30C /* AccountViewModel.swift */; };
 		F258A02729734FE500D3E30C /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258A02629734FE500D3E30C /* String+Ext.swift */; };
 		F258A0292973563100D3E30C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258A0282973563100D3E30C /* User.swift */; };
-		F258A02B2973720100D3E30C /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258A02A2973720100D3E30C /* OrderViewModel.swift */; };
 		F258A02E2975FC3300D3E30C /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258A02D2975FC3300D3E30C /* EmptyState.swift */; };
+		F258A03029763D4700D3E30C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258A02F29763D4700D3E30C /* Order.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,8 +59,8 @@
 		F258A02429734DDE00D3E30C /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		F258A02629734FE500D3E30C /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		F258A0282973563100D3E30C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		F258A02A2973720100D3E30C /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 		F258A02D2975FC3300D3E30C /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		F258A02F29763D4700D3E30C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				F2301DE4295AC60100C1A6DE /* OrderView.swift */,
-				F258A02A2973720100D3E30C /* OrderViewModel.swift */,
 			);
 			path = OrderView;
 			sourceTree = "<group>";
@@ -191,6 +190,7 @@
 			children = (
 				F2301DE8295C6E1900C1A6DE /* Appetizer.swift */,
 				F258A0282973563100D3E30C /* User.swift */,
+				F258A02F29763D4700D3E30C /* Order.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -329,7 +329,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2301DEB295C734F00C1A6DE /* AppetizerListCell.swift in Sources */,
-				F258A02B2973720100D3E30C /* OrderViewModel.swift in Sources */,
 				F2301DEF295EFB9F00C1A6DE /* APError.swift in Sources */,
 				F2301DE9295C6E1900C1A6DE /* Appetizer.swift in Sources */,
 				F258A02E2975FC3300D3E30C /* EmptyState.swift in Sources */,
@@ -346,6 +345,7 @@
 				F258A00C2967AFC900D3E30C /* RemoteImage.swift in Sources */,
 				F2301DD5295AC4ED00C1A6DE /* AppetizersApp.swift in Sources */,
 				F258A021296EA32000D3E30C /* APButton.swift in Sources */,
+				F258A03029763D4700D3E30C /* Order.swift in Sources */,
 				F2301DF32962938200C1A6DE /* Alert.swift in Sources */,
 				F2301DE5295AC60100C1A6DE /* OrderView.swift in Sources */,
 				F258A02729734FE500D3E30C /* String+Ext.swift in Sources */,

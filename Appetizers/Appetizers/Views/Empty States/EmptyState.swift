@@ -13,20 +13,25 @@ struct EmptyState: View {
     let message: String
     
     var body: some View {
-        VStack(alignment: .center, spacing: 25) {
-            Image(imageName)
-                .resizable()
-                .scaledToFit()
-                .frame(height: 150)
+        ZStack {
+            Color(.systemBackground)
+                .edgesIgnoringSafeArea(.all)
             
-            Text(message)
-                .font(.title3)
-                .fontWeight(.semibold)
-                .multilineTextAlignment(.center)
-                .foregroundColor(.secondary)
-                .padding()
+            VStack(alignment: .center, spacing: 25) {
+                Image(imageName)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 150)
+                
+                Text(message)
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.secondary)
+                    .padding()
+            }
+            .offset(y: -50)
         }
-
     }
 }
 
